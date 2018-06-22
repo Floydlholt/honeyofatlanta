@@ -100,3 +100,7 @@
     vertical-align: top;
     font-weight: bold;
 }
+
+.squ{
+    z-index: auto;
+}
