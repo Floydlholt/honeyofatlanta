@@ -58,9 +58,10 @@ body, html{
   width:100%;
   text-align:center;
   color:#fff;
-  font-size:27px;
+  font-size:30px;
   letter-spacing:8px;
   text-transform:uppercase;
+  text-shadow: 3px 3px #111;
 }
 
 .ptext .border{
