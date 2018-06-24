@@ -10,7 +10,7 @@ body, html{
 
 .pimg1, .pimg2, .pimg3{
   position:relative;
-  opacity:6;
+  opacity:2;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -61,7 +61,7 @@ body, html{
   font-size:30px;
   letter-spacing:8px;
   text-transform:uppercase;
-  text-shadow: 3px 3px #111;
+  text-shadow: 2px 2px #111111;
 }
 
 .ptext .border{
@@ -79,4 +79,6 @@ body, html{
     background-attachment:scroll;
   }
 }
+
+
 

@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- link to the SqPaymentForm library -->
     <script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
@@ -23,6 +25,10 @@
 
     <!-- link to the custom styles for SqPaymentForm -->
     <link rel="stylesheet" type="text/css" href="css/sqpaymentform.css">
+
+    // Include the Square Connect API resources
+    require_once(__DIR__ . '/connect-php-sdk/autoload.php');
+
 
 </head>
 
@@ -52,6 +58,9 @@
 </div>
 
 
+
+
+<div class="squ">
 <!-- square payment -->
 <div id="sq-ccbox">
     <!--
@@ -106,18 +115,15 @@
     <button id="sq-masterpass" class="button-masterpass"></button>
 </div>
 <!-- end square payment -->
-
-
-
-
-
-
-
-<div class="pimg1">
-    <div class="ptext">
-        Atlanta Honey
-    </div>
 </div>
+
+
+
+
+
+
+<!-- custom payment forms -->
+
 
 
 <!-- bootscrap -->
