@@ -2,607 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6114169a-52af-4b45-9ee2-a19287da37c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/CHANGES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/ApplePayApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/CatalogApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/CheckoutApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/CustomersApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/LocationsApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/OrdersApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/ReportingApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/TransactionsApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/V1EmployeesApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/V1ItemsApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/V1LocationsApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Api/V1TransactionsApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/AdditionalRecipient.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/AdditionalRecipientReceivable.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/AdditionalRecipientReceivableRefund.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Address.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchDeleteCatalogObjectsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchDeleteCatalogObjectsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchRetrieveCatalogObjectsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchRetrieveCatalogObjectsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchRetrieveOrdersRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchRetrieveOrdersResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchUpsertCatalogObjectsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/BatchUpsertCatalogObjectsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CaptureTransactionRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CaptureTransactionResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Card.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CardBrand.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogCategory.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogDiscount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogDiscountType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogIdMapping.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogInfoRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogInfoResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogInfoResponseLimits.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogItem.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogItemModifierListInfo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogItemProductType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogItemVariation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogModifier.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogModifierList.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogModifierListSelectionType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogModifierOverride.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogObject.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogObjectBatch.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogObjectType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogPricingType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQuery.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryExact.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryItemsForModifierList.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryItemsForTax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryPrefix.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryRange.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQuerySortedAttribute.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogQueryText.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogTax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CatalogV1Id.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ChargeRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ChargeRequestAdditionalRecipient.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ChargeResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Checkout.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Country.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCheckoutRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCheckoutResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCustomerCardRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCustomerCardResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCustomerRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateCustomerResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderRequestDiscount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderRequestLineItem.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderRequestModifier.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderRequestTax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateOrderResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateRefundRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CreateRefundResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Currency.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Customer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CustomerGroupInfo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CustomerPreferences.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/CustomerSortField.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCatalogObjectRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCatalogObjectResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCustomerCardRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCustomerCardResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCustomerRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/DeleteCustomerResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Device.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Error.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ErrorCategory.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ErrorCode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/InventoryAlertType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ItemVariationLocationOverrides.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListAdditionalRecipientReceivableRefundsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListAdditionalRecipientReceivableRefundsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListAdditionalRecipientReceivablesRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListAdditionalRecipientReceivablesResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListCatalogRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListCatalogResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListCustomersRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListCustomersResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListLocationsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListLocationsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListRefundsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListRefundsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListTransactionsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/ListTransactionsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Location.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/LocationCapability.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/LocationStatus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/LocationType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Money.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Order.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItem.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemDiscount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemDiscountScope.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemDiscountType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemModifier.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemTax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/OrderLineItemTaxType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Refund.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RefundStatus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RegisterDomainRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RegisterDomainResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RegisterDomainResponseStatus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveCatalogObjectRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveCatalogObjectResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveCustomerRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveCustomerResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveTransactionRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/RetrieveTransactionResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/SearchCatalogObjectsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/SearchCatalogObjectsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/SortOrder.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TaxCalculationPhase.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TaxInclusionType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Tender.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TenderCardDetails.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TenderCardDetailsEntryMethod.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TenderCardDetailsStatus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TenderCashDetails.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TenderType.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/Transaction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/TransactionProduct.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateCustomerRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateCustomerResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateItemModifierListsRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateItemModifierListsResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateItemTaxesRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpdateItemTaxesResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpsertCatalogObjectRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/UpsertCatalogObjectResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1AdjustInventoryRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1BankAccount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1CashDrawerEvent.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1CashDrawerShift.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Category.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1CreateRefundRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Discount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Employee.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1EmployeeRole.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Fee.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1InventoryEntry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Item.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1ItemImage.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Merchant.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1MerchantLocationDetails.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1ModifierList.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1ModifierOption.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Money.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Order.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1OrderHistoryEntry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Page.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PageCell.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Payment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentDiscount.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentItemDetail.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentItemization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentModifier.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentSurcharge.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PaymentTax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1PhoneNumber.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Refund.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Settlement.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1SettlementEntry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Tender.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Timecard.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1TimecardEvent.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1UpdateModifierListRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1UpdateOrderRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/V1Variation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/VoidTransactionRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/docs/Model/VoidTransactionResponse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/ApplePayApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/CatalogApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/CheckoutApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/CustomersApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/LocationsApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/OrdersApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/ReportingApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/TransactionsApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/V1EmployeesApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/V1ItemsApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/V1LocationsApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Api/V1TransactionsApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/ApiClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/ApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Configuration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/AdditionalRecipient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/AdditionalRecipientReceivable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/AdditionalRecipientReceivableRefund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchDeleteCatalogObjectsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchDeleteCatalogObjectsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchRetrieveCatalogObjectsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchRetrieveCatalogObjectsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchRetrieveOrdersRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchRetrieveOrdersResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchUpsertCatalogObjectsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/BatchUpsertCatalogObjectsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CaptureTransactionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CaptureTransactionResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Card.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CardBrand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogDiscount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogDiscountType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogIdMapping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogInfoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogInfoResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogInfoResponseLimits.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogItemModifierListInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogItemProductType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogItemVariation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogModifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogModifierList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogModifierListSelectionType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogModifierOverride.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogObject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogObjectBatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogObjectType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogPricingType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQuery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryExact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryItemsForModifierList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryItemsForTax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryPrefix.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryRange.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQuerySortedAttribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogQueryText.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogTax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CatalogV1Id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ChargeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ChargeRequestAdditionalRecipient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ChargeResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Country.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCheckoutRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCheckoutResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCustomerCardRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCustomerCardResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCustomerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateCustomerResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderRequestDiscount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderRequestLineItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderRequestModifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderRequestTax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateOrderResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateRefundRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CreateRefundResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Currency.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Customer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CustomerGroupInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CustomerPreferences.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/CustomerSortField.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCatalogObjectRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCatalogObjectResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCustomerCardRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCustomerCardResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCustomerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/DeleteCustomerResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Device.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ErrorCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ErrorCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/InventoryAlertType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ItemVariationLocationOverrides.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListAdditionalRecipientReceivableRefundsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListAdditionalRecipientReceivableRefundsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListAdditionalRecipientReceivablesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListAdditionalRecipientReceivablesResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListCatalogRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListCatalogResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListCustomersRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListCustomersResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListLocationsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListLocationsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListRefundsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListRefundsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListTransactionsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/ListTransactionsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Location.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/LocationCapability.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/LocationStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/LocationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Money.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemDiscount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemDiscountScope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemDiscountType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemModifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemTax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/OrderLineItemTaxType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Refund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RefundStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RegisterDomainRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RegisterDomainResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RegisterDomainResponseStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveCatalogObjectRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveCatalogObjectResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveCustomerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveCustomerResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveTransactionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/RetrieveTransactionResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/SearchCatalogObjectsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/SearchCatalogObjectsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/SortOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TaxCalculationPhase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TaxInclusionType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Tender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TenderCardDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TenderCardDetailsEntryMethod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TenderCardDetailsStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TenderCashDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TenderType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/Transaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/TransactionProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateCustomerRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateCustomerResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateItemModifierListsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateItemModifierListsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateItemTaxesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpdateItemTaxesResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpsertCatalogObjectRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/UpsertCatalogObjectResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1AdjustInventoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1BankAccount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1CashDrawerEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1CashDrawerShift.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1CreateRefundRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Discount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Employee.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1EmployeeRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Fee.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1InventoryEntry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Item.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1ItemImage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Merchant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1MerchantLocationDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1ModifierList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1ModifierOption.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Money.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1OrderHistoryEntry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PageCell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentDiscount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentItemDetail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentItemization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentModifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentSurcharge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PaymentTax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1PhoneNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Refund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Settlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1SettlementEntry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Tender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Timecard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1TimecardEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1UpdateModifierListRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1UpdateOrderRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/V1Variation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/VoidTransactionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/Model/VoidTransactionResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/lib/ObjectSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/ApplePayApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/CatalogApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/CheckoutApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/CustomersApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/LocationsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/OrdersApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/ReportingApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/TransactionsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/V1EmployeesApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/V1ItemsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/V1LocationsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Api/V1TransactionsApiTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/ApiClientTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/AdditionalRecipientReceivableRefundTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/AdditionalRecipientReceivableTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/AdditionalRecipientTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/AddressTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchDeleteCatalogObjectsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchDeleteCatalogObjectsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchRetrieveCatalogObjectsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchRetrieveCatalogObjectsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchRetrieveOrdersRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchRetrieveOrdersResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchUpsertCatalogObjectsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/BatchUpsertCatalogObjectsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CaptureTransactionRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CaptureTransactionResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CardBrandTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CardTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogCategoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogDiscountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogDiscountTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogIdMappingTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogInfoRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogInfoResponseLimitsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogInfoResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogItemModifierListInfoTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogItemProductTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogItemTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogItemVariationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogModifierListSelectionTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogModifierListTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogModifierOverrideTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogModifierTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogObjectBatchTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogObjectTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogObjectTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogPricingTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryExactTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryItemsForModifierListTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryItemsForTaxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryPrefixTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryRangeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQuerySortedAttributeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogQueryTextTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogTaxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CatalogV1IdTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ChargeRequestAdditionalRecipientTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ChargeRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ChargeResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CheckoutTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CountryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCheckoutRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCheckoutResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCustomerCardRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCustomerCardResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCustomerRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateCustomerResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderRequestDiscountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderRequestLineItemTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderRequestModifierTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderRequestTaxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateOrderResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateRefundRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CreateRefundResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CurrencyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CustomerGroupInfoTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CustomerPreferencesTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CustomerSortFieldTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/CustomerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCatalogObjectRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCatalogObjectResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCustomerCardRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCustomerCardResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCustomerRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeleteCustomerResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/DeviceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ErrorCategoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ErrorCodeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ErrorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/InventoryAlertTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ItemVariationLocationOverridesTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListAdditionalRecipientReceivableRefundsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListAdditionalRecipientReceivableRefundsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListAdditionalRecipientReceivablesRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListAdditionalRecipientReceivablesResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListCatalogRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListCatalogResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListCustomersRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListCustomersResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListLocationsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListLocationsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListRefundsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListRefundsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListTransactionsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/ListTransactionsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/LocationCapabilityTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/LocationStatusTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/LocationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/LocationTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/MoneyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemDiscountScopeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemDiscountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemDiscountTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemModifierTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemTaxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemTaxTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderLineItemTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/OrderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RefundStatusTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RefundTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RegisterDomainRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RegisterDomainResponseStatusTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RegisterDomainResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveCatalogObjectRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveCatalogObjectResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveCustomerRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveCustomerResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveTransactionRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/RetrieveTransactionResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/SearchCatalogObjectsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/SearchCatalogObjectsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/SortOrderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TaxCalculationPhaseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TaxInclusionTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderCardDetailsEntryMethodTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderCardDetailsStatusTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderCardDetailsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderCashDetailsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TenderTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TransactionProductTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/TransactionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateCustomerRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateCustomerResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateItemModifierListsRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateItemModifierListsResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateItemTaxesRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpdateItemTaxesResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpsertCatalogObjectRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/UpsertCatalogObjectResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1AdjustInventoryRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1BankAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1CashDrawerEventTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1CashDrawerShiftTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1CategoryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1CreateRefundRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1DiscountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1EmployeeRoleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1EmployeeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1FeeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1InventoryEntryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1ItemImageTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1ItemTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1MerchantLocationDetailsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1MerchantTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1ModifierListTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1ModifierOptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1MoneyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1OrderHistoryEntryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1OrderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PageCellTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PageTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentDiscountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentItemDetailTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentItemizationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentModifierTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentSurchargeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentTaxTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PaymentTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1PhoneNumberTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1RefundTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1SettlementEntryTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1SettlementTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1TenderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1TimecardEventTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1TimecardTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1UpdateModifierListRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1UpdateOrderRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/V1VariationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/VoidTransactionRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/Model/VoidTransactionResponseTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/test/TestAccounts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect-php-sdk-master/travis-ci/accounts.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sqpaymentform.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sqpaymentform.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/sqpaymentform.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/sqpaymentform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -617,29 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="shopping.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="17">
               <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="payment.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="238">
+              <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -650,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -671,16 +63,16 @@
         <option value="$PROJECT_DIR$/css/Navbar.css" />
         <option value="$PROJECT_DIR$/css/square.js" />
         <option value="$PROJECT_DIR$/sqaure.js" />
-        <option value="$PROJECT_DIR$/javascript/sqpaymentform.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/sample.html" />
         <option value="$PROJECT_DIR$/javascript/javascript.js" />
         <option value="$PROJECT_DIR$/css/sqpaymentform.css" />
         <option value="$PROJECT_DIR$/css/order.css" />
-        <option value="$PROJECT_DIR$/order.html" />
-        <option value="$PROJECT_DIR$/payment.html" />
         <option value="$PROJECT_DIR$/shopping.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/order.html" />
+        <option value="$PROJECT_DIR$/javascript/sqpaymentform.js" />
+        <option value="$PROJECT_DIR$/payment.html" />
       </list>
     </option>
   </component>
@@ -691,12 +83,66 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/node_modules/2kenizer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/php/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/sjs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/vary/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="147" />
-    <option name="width" value="1358" />
-    <option name="height" value="1438" />
+    <option name="x" value="145" />
+    <option name="width" value="1360" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -704,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -716,11 +161,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="php&#9;null&#9;null&#10;autobuild&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="alert&#9;FILE&#9;file://C:/Users/Holt/Desktop/websites/Atlantahoney/connect-php-sdk-master/docs/Model/InventoryAlertType.md&#10;testing&#9;null&#9;null&#10;php&#9;null&#9;null&#10;autobuild&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -755,43 +201,35 @@
       <updated>1529091022599</updated>
       <workItem from="1529091023915" duration="1253000" />
       <workItem from="1529100024789" duration="25163000" />
+      <workItem from="1529876305091" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66982000" />
+    <option name="totallyTimeSpent" value="73320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="702" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1399046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16772655" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13513513" side_tool="true" visible="true" weight="0.26056337" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13593005" side_tool="true" visible="true" weight="0.32922536" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8648649" visible="true" weight="0.26056337" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.86406994" visible="true" weight="0.32922536" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16842106" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13492823" side_tool="true" visible="true" weight="0.32962137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8650718" visible="true" weight="0.32962137" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -801,34 +239,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="442">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/menu.css" />
-    <entry file="file://$PROJECT_DIR$/menu.html" />
-    <entry file="file://$PROJECT_DIR$/css/Navbar.css" />
     <entry file="file://$PROJECT_DIR$/payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -974,13 +395,7 @@
     <entry file="file://$PROJECT_DIR$/css/menu.css" />
     <entry file="file://$PROJECT_DIR$/menu.html" />
     <entry file="file://$PROJECT_DIR$/css/Navbar.css" />
-    <entry file="file://$PROJECT_DIR$/sqaure.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="182" column="5" lean-forward="true" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sqaure.js" />
     <entry file="file://$PROJECT_DIR$/../../Pics/apple-developer-merchantid-domain-association">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1002,16 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/sqpaymentform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1019,60 +424,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/css/order.css" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/docs/Api/OrdersApi.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/docs/Api/CustomersApi.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/docs/Api/ApplePayApi.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect-php-sdk-master/docs/Api/TransactionsApi.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/sqpaymentform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="80" column="44" lean-forward="true" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sqpaymentform.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
+        <state relative-caret-position="1666">
           <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="100" column="28" lean-forward="true" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#2;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#3;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="17">
           <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="238">
+          <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
         </state>
       </provider>
     </entry>

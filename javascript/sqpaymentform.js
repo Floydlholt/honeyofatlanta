@@ -128,7 +128,6 @@ var paymentForm = new SqPaymentForm({
                 return;
             }
 
-            alert('Nonce received: ' + nonce); /* FOR TESTING ONLY */
 
             // Assign the nonce value to the hidden form field
             document.getElementById('card-nonce').value = nonce;
