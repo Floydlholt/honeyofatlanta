@@ -1,22 +1,181 @@
+/*
+	Wide Angle by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
 (function($) {
 
-	"use strict";
+	var	$window		= $(window),
+		$header		= $('#header'),
+		$banner		= $('#banner'),
+		$body		= $('body'),
+		settings	= {
+			banner: {
 
-	var	$window = $(window),
-		$body = $('body'),
-		settings = {
-			parallax: true,
-			speed: 1250
+				// Indicators (= the clickable dots at the bottom).
+					indicators: true,
+
+				// Transition speed (in ms)
+				// For timing purposes only. It *must* match the transition speed of "#banner > article".
+					speed: 1500,
+
+				// Transition delay (in ms)
+					delay: 4000
+
+			}
+		};
+
+	/**
+	 * Custom banner slider for Zenith.
+	 * @return {jQuery} jQuery object.
+	 */
+		$.fn._slider = function(options) {
+
+			var	$window = $(window),
+				$this = $(this);
+
+			if (this.length == 0)
+				return $this;
+
+			if (this.length > 1) {
+
+				for (var i=0; i < this.length; i++)
+					$(this[i])._slider(options);
+
+				return $this;
+
+			}
+
+			// Vars.
+				var	current = 0, pos = 0, lastPos = 0,
+					slides = [], indicators = [],
+					$indicators,
+					$slides = $this.children('article'),
+					intervalId,
+					isLocked = false,
+					i = 0;
+
+			// Turn off indicators if we only have one slide.
+				if ($slides.length == 1)
+					options.indicators = false;
+
+			// Functions.
+				$this._switchTo = function(x, stop) {
+
+					if (isLocked || pos == x)
+						return;
+
+					isLocked = true;
+
+					if (stop)
+						window.clearInterval(intervalId);
+
+					// Update positions.
+						lastPos = pos;
+						pos = x;
+
+					// Hide last slide.
+						slides[lastPos].removeClass('top');
+
+						if (options.indicators)
+							indicators[lastPos].removeClass('visible');
+
+					// Show new slide.
+						slides[pos].addClass('visible').addClass('top');
+
+						if (options.indicators)
+							indicators[pos].addClass('visible');
+
+					// Finish hiding last slide after a short delay.
+						window.setTimeout(function() {
+
+							slides[lastPos].addClass('instant').removeClass('visible');
+
+							window.setTimeout(function() {
+
+								slides[lastPos].removeClass('instant');
+								isLocked = false;
+
+							}, 100);
+
+						}, options.speed);
+
+				};
+
+			// Indicators.
+				if (options.indicators)
+					$indicators = $('<ul class="indicators"></ul>').appendTo($this);
+
+			// Slides.
+				$slides
+					.each(function() {
+
+						var $slide = $(this),
+							$img = $slide.find('img');
+
+						// Slide.
+							$slide
+								.css('background-image', 'url("' + $img.attr('src') + '")')
+								.css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
+
+						// Add to slides.
+							slides.push($slide);
+
+						// Indicators.
+							if (options.indicators) {
+
+								var $indicator_li = $('<li>' + i + '</li>').appendTo($indicators);
+
+								// Indicator.
+									$indicator_li
+										.data('index', i)
+										.on('click', function() {
+											$this._switchTo($(this).data('index'), true);
+										});
+
+								// Add to indicators.
+									indicators.push($indicator_li);
+
+							}
+
+						i++;
+
+					});
+
+			// Initial slide.
+				slides[pos].addClass('visible').addClass('top');
+
+				if (options.indicators)
+					indicators[pos].addClass('visible');
+
+			// Bail if we only have a single slide.
+				if (slides.length == 1)
+					return;
+
+			// Main loop.
+				intervalId = window.setInterval(function() {
+
+					current++;
+
+					if (current >= slides.length)
+						current = 0;
+
+					$this._switchTo(current);
+
+				}, options.delay);
+
 		};
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
+			default:   ['1681px',   null       ],
+			xlarge:    ['1281px',   '1680px'   ],
+			large:     ['981px',    '1280px'   ],
+			medium:    ['737px',    '980px'    ],
+			small:     ['481px',    '736px'    ],
+			xsmall:    ['361px',    '480px'    ],
+			xxsmall:   [null,       '360px'    ]
 		});
 
 	// Play initial animations on page load.
@@ -26,304 +185,32 @@
 			}, 100);
 		});
 
-	// Forms.
-		var $form = $('form');
+	// Slider.
+		$banner._slider(settings.banner);
 
-		// Events.
-			$('input,textarea,select').on('keydown', function(event) {
-				event.stopPropagation();
+	// Dropdowns.
+		$('.nav')
+			.dropotron({
+				offsetY: -50,
+				mode: 'fade',
+				noOpenerFade: true,
+				alignment: 'center',
+				hideDelay: 350
 			});
 
-		// Fix: Placeholder polyfill.
-			$form.placeholder();
-
-	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
-
-	// Main.
-		(function() {
-
-			var	$nav = $('#nav'),
-				$navItems = $nav.find('> ul > li'),
-				$main = $('#main'),
-				$reel = $main.children('.reel'),
-				$slides = $reel.children('.slide'),
-				$controls = $('<nav><span class="previous"></span><span class="next"></span></nav>').appendTo($main),
-				$next = $controls.children('.next'),
-				$previous = $controls.children('.previous'),
-				pos = 0,
-				locked = false;
-
-			// Switch function.
-				var switchTo = function(newPos, instant) {
-
-					var $slide, $navItem, left;
-
-					// Out of bounds? Bail.
-						if (newPos < 0
-						||	newPos >= $slides.length)
-							return;
-
-					// Deal with lock.
-						if (instant !== true) {
-
-							if (locked)
-								return;
-
-							locked = true;
-
-						}
-
-					// Update position.
-						pos = newPos;
-						left = $slides.width() * pos;
-
-					// Update nav.
-
-						// Clear active state.
-							$navItems
-								.removeClass('active');
-
-						// Get new item and activate it.
-							$navItem = $navItems.eq(pos);
-
-							$navItem
-								.addClass('active');
-
-					// Update slides.
-
-						// Clear active state.
-							$slides
-								.removeClass('active');
-
-						// Get new slide and activate it.
-							$slide = $slides.eq(pos);
-
-							$slide
-								.addClass('active');
-
-					// Update hash.
-						history.replaceState(null, null, (pos == 0 ? '#' : '#' + $slide.attr('id')));
-
-					// Update controls.
-
-						// Previous.
-							if (pos == 0)
-								$previous.addClass('disabled');
-							else
-								$previous.removeClass('disabled');
-
-						// Next.
-							if (pos == $slides.length - 1)
-								$next.addClass('disabled');
-							else
-								$next.removeClass('disabled');
-
-					// Not instant? Animate to new scroll position.
-						if (instant !== true) {
-
-							$main.animate({
-								scrollLeft: left
-							}, settings.speed, 'swing', function() {
-								locked = false;
-							});
-
-						}
-
-					// Otherwise, jump straight to new scroll position.
-						else
-							$main.scrollLeft(left);
-
-				};
-
-			// Reel.
-				$reel
-					.css('width', (100 * $slides.length) + 'vw');
-
-			// Slides.
-				$slides.each(function() {
-
-					var $this = $(this),
-						$img = $this.children('img'),
-						id = $this.attr('id'),
-						position = $img.data('position'),
-						bg = {
-							image: $this.css('background-image'),
-							size: $this.css('background-size'),
-							position: $this.css('background-position'),
-							repeat: $this.css('background-repeat'),
-							attachment: $this.css('background-attachment')
-						},
-						x;
-
-					// Set index.
-						$this
-							.data('index', $this.index())
-							.attr('data-index', $this.index());
-
-					// Image.
-
-						// Assign image.
-							$this
-								.css('background-image', (bg.image ? bg.image + ',' : '') + 'url("' + $img.attr('src') + '")')
-								.css('background-size', (bg.size ? bg.size + ',' : '') + 'cover')
-								.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%')
-								.css('background-repeat', (bg.repeat ? bg.repeat + ',' : '') + 'no-repeat')
-								.css('background-attachment', (bg.attachment ? bg.attachment + ',' : '') + 'fixed');
-
-						// Hack: IE workaround because it's a crappy browser.
-							if (browser.name == 'ie') {
-
-								x = $this.css('background-image');
-
-								$this.css('background-image', x.replace($img.attr('src'), 'invalid'));
-
-								window.setTimeout(function() {
-									$this.css('background-image', x);
-								}, 100);
-
-							}
-
-						// Hide <img>.
-							$img.hide();
-
-					// Links.
-						$body.on('click', 'a[href="#' + id + '"]', function(event) {
-
-							event.preventDefault();
-							event.stopPropagation();
-
-							switchTo($this.index());
-
-						});
-
-					// Parallax.
-						if (settings.parallax)
-							$main.on('scroll', function() {
-
-								if (breakpoints.active('<=large')
-								||	browser.mobile
-								||	!browser.canUse('transition')
-								||	$window.prop('orientation') == 0 || $window.prop('orientation') == 180
-								||	$window.width() < $window.height()) {
-
-									if (position)
-										$this.css('background-position', (bg.position ? bg.position + ',' : '') + position);
-									else
-										$this.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%');
-
-								}
-								else {
-
-									var l = $this.width() * $this.index(),
-										sl = $main.scrollLeft(),
-										w = $this.width(),
-										p = ( (sl - l) / w );
-
-									$this.css('background-position', (bg.position ? bg.position + ',' : '') + (p * 100) + '% 50%');
-
-								}
-
-							});
-
-				});
-
-			// Controls.
-				$next
-					.on('touchmove', function(event) {
-						event.stopPropagation();
-						event.preventDefault();
-					})
-					.on('click', function(event) {
-						switchTo(pos + 1);
-					});
-
-				$previous
-					.on('touchmove', function(event) {
-						event.stopPropagation();
-						event.preventDefault();
-					})
-					.on('click', function(event) {
-						switchTo(pos - 1);
-					});
-
-			// Window.
-				$window
-					.on('keydown', function(event) {
-
-						var newPos = null;
-
-						switch (event.keyCode) {
-
-							// Home.
-								case 36:
-									newPos = 0;
-									break;
-
-							// End.
-								case 35:
-									newPos = $slides.length - 1;
-									break;
-
-							// Left.
-								case 37:
-									newPos = pos - 1;
-									break;
-
-							// Space, Right.
-								case 32:
-								case 39:
-									newPos = pos + 1;
-									break;
-
-						}
-
-						if (newPos !== null) {
-
-							event.stopPropagation();
-							event.preventDefault();
-
-							switchTo(newPos);
-
-						}
-
-					})
-					.on('resize orientationchange', function() {
-						setTimeout(function() {
-
-							// Switch.
-								switchTo(pos, true);
-
-						}, 0);
-					})
-					.on('load', function() {
-						setTimeout(function() {
-
-							var h, $slide;
-
-							// Trigger resize.
-								$window.triggerHandler('resize');
-
-							// Get initial slide.
-								h = location.hash;
-
-								if (h
-								&&	($slide = $slides.filter('[id="' + h.substr(1) + '"]')).length > 0)
-									pos = $slide.data('index');
-
-							// Switch.
-								switchTo(pos, true);
-
-						}, 0);
-					});
-
-				// Parallax.
-					if (settings.parallax)
-						$window.on('resize', function() {
-							$main.triggerHandler('scroll');
-						});
-
-		})();
+	// Menu.
+		$('<a href="#navPanel" class="navPanelToggle"><span class="label">Menu</span></a>')
+			.appendTo($header);
+
+		$('<div id="navPanel">' + '<nav>' + $('.nav').navList() + '</nav>' + '<a href="#navPanel" class="close"></a>' + '</div>')
+			.appendTo($body)
+			.panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'left'
+			});
 
 })(jQuery);

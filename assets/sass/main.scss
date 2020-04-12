@@ -3,31 +3,28 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Bitter:400,700|Pacifico');
+@import 'libs/html-grid';
+@import 'libs/fixed-grid';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700');
 
-
+/*
+	Wide Angle by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
 
 // Breakpoints.
 
 	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  )
+		default:   (1681px,   null     ),
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
 	));
-
-// Mixins.
-
-	@mixin color($p) {
-		@include color-typography($p);
-		@include color-button($p);
-		@include color-form($p);
-		@include color-list($p);
-		@include color-table($p);
-	}
 
 // Base.
 
@@ -37,6 +34,9 @@
 
 // Component.
 
+	@import 'components/row';
+	@import 'components/box';
+	@import 'components/button';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
@@ -44,9 +44,14 @@
 	@import 'components/actions';
 	@import 'components/icons';
 	@import 'components/table';
-	@import 'components/button';
+	@import 'components/wrapper';
+	@import 'components/inner';
+	@import 'components/features-grid';
 
 // Layout.
 
 	@import 'layout/header';
+	@import 'layout/navPanel';
 	@import 'layout/main';
+	@import 'layout/banner';
+	@import 'layout/footer';
